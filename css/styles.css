@@ -1,61 +1,115 @@
-/*Estilização body do site*/
-body{
+/*ESTILIZAÇÃO BODY*/
+body {
     margin: 0;
-    border: 0;
-    font-family: 'Helvetica', 'Courier New';
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f4f4f4;
 }
-.logo{
-    width: 7%;
-    margin: 0 0 0 0px;
+/*ESTILIZAÇÃO HEADER*/
+header {
+    background-color: black;
+    padding: 10px 0;
+}
+/*ESTILIZAÇÃO DIV HEADER*/
+.divHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
 }
 
-/*Estiliazção do header do site*/
-header{
-    background-color: black;
+/*ESTILIZAÇÃO LOGO*/
+.logo {
+    width: 120px;
 }
-/*Estilização da DIV Header*/
-.divHeader{
-    position: relative;
-    margin: auto;
-    padding-bottom: 0px;
+
+/*ESTILIZAÇÃO MENU*/
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
 }
-/*Estilização do MENU do site*/
-nav{
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+/*nav{
     position: absolute;
     top: 25px;
     right: 7%;
-}
+}*/
 
-nav li{
+/*nav li{
     display: inline;
     color: whitesmoke;
     font-size: 27px;
     margin-right: 30px;
+}*/
+
+/*ESTILIZAÇÃO BANNER*/
+.banner {
+    width: 100%;
+    display: none;
+    object-fit: cover;
+    height: 400px;
 }
 
-.banner{
+.banner-container {
+    position: relative;
     width: 100%;
-    height: 40%;
-    object-fit: cover;
+    overflow: hidden;
 }
-/**/
+
+.banner.active {
+    display: block;
+}
+
+/*ESTILIZAÇÃO BOTÃO DO BANNER*/
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/*ESTILIZAÇÃO SOBRE NOS*/
 .sobreNos {
     margin: 0;
-    background-color: white;
+    /*background-color: white;*/
     text-align: justify;
     width: 60%;
     margin-left: 20%;
-    font-size: 23px;
+    font-size: 22px;
 }
-
+/*IMAGENS*/
 .imgSobreNos1 {
-    width: 40%;
+    width: 45%;
     float: left;
     margin-right: 20px;
 }
 
 .imgSobreNos2 {
-    width: 40%;
+    width: 45%;
     float: right;
     margin-left: 20px;
 }
@@ -67,9 +121,9 @@ nav li{
 
 /*.fundoSobreNos {
     background: linear-gradient(#fffffe, #999999);
-}*/
+}
 
-/*Estilização NEGRITO e ITÁLICO
+Estilização NEGRITO e ITÁLICO
 .texto_diferente {
     color: navy;
     font-weght: bold;
@@ -78,21 +132,35 @@ nav li{
 }
 */
 
+/*ESTILIZAÇÃO MAPA*/
 .tituloLocalizacao {
     clear: left;
     text-align: center;
 }
 
 .mapaGeral {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(#ddd, #515151);
+    font-size: 22px;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+}
+
+/*.mapaGeral {
     align-self: center;
     background: linear-gradient(#fffffe, #999999);
     font-size: 23px;
 }
 
-/*.mapaGeral p{
+.mapaGeral p{
     text-align: center;
-}*/
+}
 
 .mapa {
     margin-left: 22%;
-}
+}*/

@@ -19,7 +19,7 @@ header {
 
 /*ESTILIZAÇÃO LOGO*/
 .logo {
-    width: 120px;
+    width: 7em;
 }
 
 /*ESTILIZAÇÃO MENU*/
@@ -37,21 +37,8 @@ header {
 .menu li a {
     color: white;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 1.5em;
 }
-
-/*nav{
-    position: absolute;
-    top: 25px;
-    right: 7%;
-}*/
-
-/*nav li{
-    display: inline;
-    color: whitesmoke;
-    font-size: 27px;
-    margin-right: 30px;
-}*/
 
 /*ESTILIZAÇÃO BANNER*/
 .banner {
@@ -99,9 +86,14 @@ button {
     text-align: justify;
     width: 60%;
     margin-left: 20%;
-    font-size: 22px;
+    font-size: 1.5em;
 }
-/*IMAGENS*/
+
+.tituloSobreNos {
+    clear: left;
+    text-align: center;
+}
+
 .imgSobreNos1 {
     width: 45%;
     float: left;
@@ -114,10 +106,97 @@ button {
     margin-left: 20px;
 }
 
-.tituloSobreNos {
+/*ESTILIZAÇÃO MAPA*/
+.tituloLocalizacao {
     clear: left;
     text-align: center;
 }
+
+.mapaGeral {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(#ddd, #727272);
+    font-size: 1.5em;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 450px;
+}
+
+/*ESTILIZAÇÃO PRODUTOS*/
+.tituloProdutos {
+    text-align: center;
+    margin: 0;
+    text-align: center;
+}
+
+.produtos {
+    /*text-align: justify;*/
+    /*margin: 0;*/
+    padding: 2%;
+    font-size: 1.5em;
+    background: linear-gradient(#727272, #515151);
+}
+
+.divProdutos {
+    width: 70%;
+    margin-left: 30%;
+}
+
+.listaProdutos {
+    width: 30%;
+    display: inline-block; 
+    vertical-align: "top";
+    list-style: none;  
+    font-size: 1.0em;                       
+    /*padding-left: 50%;
+    line-height: 2;
+    font-size: 22px;*/
+}
+
+.listaProdutos li {
+    line-height: 2;
+}
+
+.listaProdutos li:before {
+    content: "» ";
+}
+
+.imgProdutos {
+    width: 16%;
+    box-shadow: 10px 10px 5px 0px #0000;
+    border-radius: 8px;
+    opacity: 1;
+    transition: 400ms;
+    /* position: absolute;
+    padding-left: 60%;
+    margin-top: -230px; */
+}
+
+.imgProdutos:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+/*.mapaGeral {
+    align-self: center;
+    background: linear-gradient(#fffffe, #999999);
+    font-size: 23px;
+}
+
+.mapaGeral p{
+    text-align: center;
+}
+
+.mapa {
+    margin-left: 22%;
+}*/
+
 
 /*.fundoSobreNos {
     background: linear-gradient(#fffffe, #999999);
@@ -132,35 +211,15 @@ Estilização NEGRITO e ITÁLICO
 }
 */
 
-/*ESTILIZAÇÃO MAPA*/
-.tituloLocalizacao {
-    clear: left;
-    text-align: center;
-}
+/*nav{
+    position: absolute;
+    top: 25px;
+    right: 7%;
+}*/
 
-.mapaGeral {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(#ddd, #515151);
-    font-size: 22px;
-}
-
-.mapa iframe {
-    width: 100%;
-    max-width: 900px;
-    height: 450px;
-}
-
-/*.mapaGeral {
-    align-self: center;
-    background: linear-gradient(#fffffe, #999999);
-    font-size: 23px;
-}
-
-.mapaGeral p{
-    text-align: center;
-}
-
-.mapa {
-    margin-left: 22%;
+/*nav li{
+    display: inline;
+    color: whitesmoke;
+    font-size: 27px;
+    margin-right: 30px;
 }*/

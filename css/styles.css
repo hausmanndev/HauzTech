@@ -127,7 +127,6 @@ button {
 
 /*ESTILIZAÇÃO PRODUTOS*/
 .tituloProdutos {
-    text-align: center;
     margin: 0;
     text-align: center;
 }
@@ -179,8 +178,13 @@ button {
     opacity: 0.5;
 }
 
+/* ESTILIZAÇÃO VIDEO */
+.video {
+    padding: 5% 0% 0 30%;
+}
 
 
+/*/
 
 
 /*.mapaGeral {

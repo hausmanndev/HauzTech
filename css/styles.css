@@ -6,7 +6,7 @@ body {
 }
 /*ESTILIZAÇÃO HEADER*/
 header {
-    background-color: black;
+    background-color: #171717;
     padding: 10px 0;
 }
 /*ESTILIZAÇÃO DIV HEADER*/
@@ -37,7 +37,7 @@ header {
 .menu li a {
     color: white;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 /*ESTILIZAÇÃO BANNER*/
@@ -86,7 +86,7 @@ button {
     text-align: justify;
     width: 60%;
     margin-left: 20%;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .tituloSobreNos {
@@ -116,7 +116,7 @@ button {
     text-align: center;
     padding: 20px;
     background: linear-gradient(#ddd, #727272);
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .mapa iframe {
@@ -135,7 +135,7 @@ button {
     /*text-align: justify;*/
     /*margin: 0;*/
     padding: 2%;
-    font-size: 1.5em;
+    font-size: 1.4em;
     background: linear-gradient(#727272, #515151);
 }
 
@@ -187,7 +187,7 @@ button {
 /*ESTILIZAÇÃO DO FOOTER*/
 footer {
     background: url("../img/footer.png");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;

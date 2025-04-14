@@ -7,6 +7,13 @@
     <title>HauzTech</title>
 </head>
 <body>
+    <script>
+        alert('Bem vindo ao nosso site!')
+
+        dia = new Array("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado");
+        mes = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+        data = new Date
+    </script>
     <header>
         <div class="divHeader">
             <img src="img/logo.png" alt="Logo HauzTech" class="logo">
@@ -36,12 +43,15 @@
         SOBRE NÓS-->
         <section class="sobreNos">
             <h2 class="tituloSobreNos">Sobre nós</h2>
+            <script>
+                document.write(dia[data.getDay()] +", "+ data.getDate() +" / "+ mes[data.getMonth()] +" / "+ data.getFullYear());
+            </script>
             <img src="img/sobre_nos1.png" title="img1-sobreNos" class="imgSobreNos1">
             <p>Na <b>HauzTech</b> oferecemos soluções completas para o universo dos computadores. Nosso objetivo é fornecer desde 
                 hardware de alta qualidade e periféricos essenciais até serviços especializados de manutenção e montagem de computadores, 
                 sempre com um atendimento personalizado.</p>
             <img src="img/sobre_nos2.png" title="img2-sobreNos" class="imgSobreNos2">
-            <br><p>Com expertise no mercado de informática, garantimos que cada produto e serviço atenda aos mais altos 
+            <p>Com expertise no mercado de informática, garantimos que cada produto e serviço atenda aos mais altos 
                 padrões de desempenho e confiabilidade. Seja para gamers, profissionais ou entusiastas de tecnologia, 
                 estamos prontos para transformar suas ideias em realidade, oferecendo soluções sob medida para suas necessidades.
             <br>Conte conosco para impulsionar sua experiência tecnológica com eficiência, qualidade e confiança.</p>

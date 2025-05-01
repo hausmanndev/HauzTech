@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css"/>
+    <title>HauzTech</title>
+</head>
+<body>
+    <section class="container">
+        <header><a href="../index.html"><img src="../img/logo.png" class="logo"/></a></header>
+        <form action="#" class="form">
+            <!--Box do Nome-->
+            <div class="input-box">
+                <label>Nome Completo</label>
+                <input type="text" placeholder="Digite seu nome completo" required>
+            </div>
+            <!--Box do E-mail-->
+            <div class="input-box">
+                <label>E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <!--Box do Telefone e da Data de Nascimento-->
+            <div class="column">
+                <div class="input-box">
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="(DDD) X XXXX-XXXX" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Data de Nascimento</label>
+                    <input type="date" placeholder="Dia / Mês / Ano" required>
+                </div>
+            </div>
+            <!--Box dos Gêneros-->
+            <div class="gender-box">
+                <h3>Gênero</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="marcar-masculino" name="genero" />
+                        <label for="marcar-masculino">Masculino</label>
+                    </div>
+    
+                    <div class="gender">
+                        <input type="radio" id="marcar-feminino" name="genero" />
+                        <label for="marcar-feminino">Feminino</label>
+                    </div>
+    
+                    <div class="gender">
+                        <input type="radio" id="marcar-outros" name="genero" />
+                        <label for="marcar-outros">Prefiro não dizer</label>
+                    </div>
+                </div>
+            </div>
+                
+
+            <div class="input-box solicitacao">
+                <div class="column">
+                    <div class="select-item">
+                        <label>Motivo do Contato</label>
+                            <div class="select-box">
+                            <select title="MotivoContato" required>
+                                <option selected disabled>Escolha uma opção</option>
+                                <option>Computador não liga</option>
+                                <option>Pulsa energia mas não inicia</option>
+                                <option>Problemas na inicialização do sistema</option>
+                                <option>Pantalla azul (erro do Windows)</option>
+                                <option>Computador travando ou reiniciando</option>
+                                <option>Desempenho lento</option>
+                                <option>Problemas com conexão de internet</option>
+                                <option>Instalação ou atualização de software</option>
+                                <option>Erro ao instalar drivers</option>
+                                <option>Remoção de vírus ou malware</option>
+                                <option>Backup ou recuperação de arquivos</option>
+                                <option>Troca ou upgrade de HD, SSD, memória, etc.</option>
+                                <option>Instalação de sistema operacional</option>
+                                <option>Problemas com impressora</option>
+                                <option>Teclado, mouse ou outro periférico não funciona</option>
+                                <option>Superaquecimento ou barulho excessivo</option>
+                                <option>Montagem de computador</option>
+                                <option>Limpeza interna (manutenção preventiva)</option>
+                                <option>Outros (descrever)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="select-item">
+                        <label>Assunto</label>
+                        <div class="select-box">
+                            <select title="Assunto" required>
+                                <option selected disabled>Escolha uma opção</option>
+                                <option>Hardware</option>
+                                <option>Software</option>
+                                <option>Sistema Operacional</option>
+                                <option>Redes e Internet</option>
+                                <option>Impressoras e Periféricos</option>
+                                <option>Upgrade ou Troca de Peças</option>
+                                <option>Montagem de Computador</option>
+                                <option>Manutenção Preventiva</option>
+                                <option>Suporte Remoto</option>
+                                <option>Atendimento Residencial/Comercial</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label>Endereço</label>
+                    <input type="text" placeholder="Rua" required>
+                    <input type="text" placeholder="Bairro" required>
+                    <input type="text" placeholder="Número" required>
+                    <input type="text" placeholder="Complemento">
+                    <input type="text" placeholder="CEP" required>
+                </div>
+
+                <div class="input-box descricao">
+                    <label>Descrição</label>
+                    <textarea placeholder="Descreva detalhadamente sua solicitação" required></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>

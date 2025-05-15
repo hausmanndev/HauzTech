@@ -1,0 +1,27 @@
+<html lang="pt">
+    <head>
+        <title>HauzTech</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <h1 id="nome-produto">TITULO</h1>
+                <img id="imagem-produto" src="">
+                <p id="descricao-produto">DESCRICAO</p>
+
+                <!--Captura as informções do produto-->
+                <script>
+                    function getParametro(dado) {
+                        const URL_PARAMS = new URLSearchParams(window.location.search);
+                        return URL_PARAMS.get(dado);
+                    }
+
+                    //Preenche na página as informações recebidas
+                    document.getElementById("nome-produto").textContent = getParametro("nome");
+                    document.getElementById("imagem-produto").src = getParametro("imagem");
+                    document.getElementById("decricao-produto").textContent = getParametro("descricao")
+                </script>
+            </div>
+        </main>
+    </body>
+</html>
